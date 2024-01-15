@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    padding:0;
+    background-color:rgb(244, 240, 240) ;
+    
+}
+.sidebar-open {
+    animation: slideIn 1s ease;
+  }
+  @keyframes slideIn {
+    from {
+      margin-left: -100%; /* Start off-screen on the left */
+    }
+    to {
+      margin-left: 0; /* Slide in to the normal position */
+    }
+  }
+  
+
+  .slideDown {
+    animation: slideDown 1s ease;
+  }
+  @keyframes slideDown{
+    from {
+      margin-top: -100%; /* Start off-screen on the left */
+    }
+    to {
+      margin-top: 0; /* Slide in to the normal position */
+    }
+  }
+
+  .slideUp {
+    animation: slideup 1s ease;
+     /* Correct the property value */
+  }
+  
+  @keyframes slideup {
+    from {
+      transform:  translateY(100%);
+    }
+    to {
+      transform:  translateY(0);
+    }
+  }
+  .godown {
+    animation: godown 1s ease;
+  }
+  @keyframes godown {
+    from {
+      transform:  translateY(0);
+    }
+    to {
+      transform:  translateY(100%);
+    }
+  }
